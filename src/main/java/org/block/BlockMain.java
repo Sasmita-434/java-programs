@@ -1,6 +1,7 @@
 package org.block;
 
 public class BlockMain {
+    static String var = "Static variable";
     //main method
     public static void main(String[] args) {
         new BlockMain();
@@ -12,6 +13,7 @@ public class BlockMain {
     //static class
     static {
         System.out.println("This is a Static class");
+        System.out.println(var+" : inside static class");
     }
     static {
         System.out.println("This is another Static class");
@@ -26,12 +28,16 @@ public class BlockMain {
     //instance class
     {
         System.out.println("This is an Instance class without static keyword");
+        System.out.println(var+" : inside instance class");
+       // int sum = a + b;
     }
     {
         System.out.println("This is another Instance class");
+        System.out.println("------------------------------------------");
     }
     public BlockMain(){
         System.out.println("****Constructor method created****");
+        System.out.println(var+" : inside main method");
         String classname = "BlockMain";
         System.out.println("Constructor name is same as Class name = "+classname);
     }
