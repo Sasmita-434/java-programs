@@ -10,7 +10,7 @@ public class MethodInvocation {
         System.out.println("Multiplication of 9 and 13 = "+m_result);
         System.out.println("--------------------------------------------");
     }
-    {               //it automatically gets executed when main method class is invoked
+    {               //it automatically gets executed when main method is invoked
         System.out.println("*******  Welcome to Instance Class");
         sum(15,20);
         int mul_result = mul(20,15);
