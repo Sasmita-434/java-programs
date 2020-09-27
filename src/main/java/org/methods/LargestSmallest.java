@@ -13,7 +13,7 @@ public class LargestSmallest {
             return c;
     }
 
-    public int smallest(int a,int b,int c){        //ono-static method
+    public int smallest(int a,int b,int c){        //non-static method
         if(a<b && a<c)
             return a;
         else if (b<a && b<c)
