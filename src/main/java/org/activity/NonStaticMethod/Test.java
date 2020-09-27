@@ -1,34 +1,35 @@
 package org.activity.NonStaticMethod;
 
-// ACTIVITY - 3 : STATIC METHOD
+// ACTIVITY - 3 : NON-STATIC METHOD
 
     public class Test {
 
-        public static int number;     //static variable
+        public int age;     //static variable
 
         public static void main(String[] args) {
-            m1();
-            m2();
+           Test var = new Test();
+           var.m1();
         }
-        //static method
-        static void m1(){
-            number = 33;
-            if(number % 2 == 0)
-                System.out.println(number+" is an even number");
+        //non-static method
+        void m1(){
+            age = 21;
+            System.out.println("INSIDE STATIC METHOD");
+            if(age >= 18)
+                System.out.println("Eligible to Vote");
             else
-                System.out.println(number+" is an odd number");
+                System.out.println("Not eligible to vote");
         }
-        static void m2(){
-            number = 18;
-            if(number % 2 == 0)
-                System.out.println(number+" is an even number");
+        void m2(){
+            age = 9;
+            if(age >= 18)
+                System.out.println("Eligible to vote");
             else
-                System.out.println(number+" is an odd number");
+                System.out.println("Not eligible to vote");
             m1();
         }
-        //static block
-        static {
-            System.out.println("INSIDE STATIC BLOCK");
+        //non-static block
+        {
+            System.out.println("INSIDE NON-STATIC BLOCK");
             m1();
             System.out.println("--------------------------------");
         }
