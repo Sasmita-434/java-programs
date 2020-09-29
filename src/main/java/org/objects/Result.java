@@ -7,24 +7,22 @@ public class Result {
     public float mark2;
     public float percentage;
 
-    public void getResult()
+    public String getResult()
     {
         if(percentage >= 60)
         {
-            System.out.println("Your result : Grade A");
+            return "Grade A";
         }
         else if(percentage < 60 && percentage >= 50)
         {
-            System.out.println("Your result : Grade B");
+            return "Grade B";
         }
         else if(percentage < 50 && percentage >= 40)
         {
-            System.out.println("Your result : Grade C");
+            return "Grade C";
         }
-        else if(percentage < 40)
-        {
-            System.out.println("Your result : Grade D");
-        }
+
+        return "Grade D";
     }
 
 }

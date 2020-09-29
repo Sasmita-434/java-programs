@@ -15,7 +15,7 @@ public class ResultMain {
         System.out.println("Mark-2 : "+object1.mark2);
         System.out.println("Percentage : "+object1.percentage);
 
-        object1.getResult();
+        System.out.println(object1.getResult());
         System.out.println("----------------------------------");
 
         Result object2 = new Result();
@@ -29,7 +29,7 @@ public class ResultMain {
         System.out.println("Mark-2 : "+object2.mark2);
         System.out.println("Percentage : "+object2.percentage);
 
-        object2.getResult();
+        System.out.println(object2.getResult());
         System.out.println("----------------------------------");
 
         System.out.println("object1 : "+object1.getClass());
