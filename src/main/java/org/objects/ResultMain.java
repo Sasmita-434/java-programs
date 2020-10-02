@@ -32,22 +32,36 @@ public class ResultMain {
         System.out.println(object2.getResult());
         System.out.println("----------------------------------");
 
-        System.out.println("object1 : "+object1.getClass());
-        System.out.println("object2 : "+object2.getClass());
-
         System.out.println(object1 == object2);
+        System.out.println("object1 class: "+object1.getClass());
+        System.out.println("object2 class: "+object2.getClass());
 
         System.out.println("-----------------------------------");
         Result var1 = object1;
         System.out.println(var1 == object1);
-        System.out.println(object1);
-        System.out.println(var1);
+        System.out.println("object1 : "+object1);
+        System.out.println("Variable2 : "+var1);
+        System.out.println("object1 hashcode: "+object1.hashCode());
+        System.out.println("Variable1 hashcode : "+var1.hashCode());
 
         System.out.println("-----------------------------------");
         Result var2 = object2;
         System.out.println(var2 == object2);
-        System.out.println(object2);
-        System.out.println(var2);
+        System.out.println("object2 : "+object2);
+        System.out.println("Variable2 : "+var2);
+        System.out.println("object2 hashcode: "+object2.hashCode());
+        System.out.println("Variable2 hashcode : "+var2.hashCode());
+
+        System.out.println("-----------------------------------");
+        Result var3 = var1;
+        System.out.println(var3 == var1);
+        System.out.println("object1 : "+object1);
+        System.out.println("Variable1 : "+var1);
+        System.out.println("Variable3 : "+var3);
+        System.out.println("object1 hashcode: "+object1.hashCode());
+        System.out.println("Variable1 hashcode : "+var1.hashCode());
+        System.out.println("Variable3 hashcode : "+var3.hashCode());
+
 
 
     }
