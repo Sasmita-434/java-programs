@@ -24,6 +24,7 @@ public class Train {
         System.out.println("Bill : "+bill);
     }
 
+    @Override
     public String toString()
     {
         String display = ticket_no+" "+place+" "+seat_no+" "+bill;
