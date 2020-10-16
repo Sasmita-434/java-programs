@@ -7,22 +7,22 @@ public class Test12 {
 
     static{
         x = 10;
-        System.out.println("x = "+x);
+        System.out.println("x = "+x); // value of x = 10
     }
 
     static{
         x = x + 20;
-        System.out.println("x = "+x);
+        System.out.println("x = "+x); // updated value of x = 30
     }
 
     {
         y = 100;
-        System.out.println("y = "+y);
+        System.out.println("y = "+y); // value of y = 100
     }
 
     {
         y = y + 20;
-        System.out.println("y = "+y);
+        System.out.println("y = "+y); // updated value of y = 120
     }
 
     public static void main(String[] args)
@@ -31,7 +31,10 @@ public class Test12 {
         t.x = t.x + 40;
         x = x + 50;
 
-        // t.y = t.y + 200; // NullPointerException
+        // t.y = t.y + 200;
+        // NullPointerException, y is initialized inside instance class
+        // the object of the class is not created yet
+
         t = new Test12();
         t.y = t.y + 200;
 
